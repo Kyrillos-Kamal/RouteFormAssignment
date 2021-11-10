@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Form Assignment</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset class="first-fieldset">
+        <legend>Personal Data</legend>
+        <fieldset class="first-fieldset inputset">
+          <legend>Your Name</legend>
+          <input
+            type="text"
+            name="userFirstName"
+            id=""
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="userLastName"
+            id=""
+            placeholder="Last Name"
+          />
+        </fieldset>
+
+        <input
+          class="custom-inputs"
+          type="tel"
+          name="userPhone"
+          id=""
+          placeholder="Phone Number"
+        />
+        <input
+          class="custom-inputs"
+          type="email"
+          name="userEmail"
+          id=""
+          placeholder="Email"
+        />
+        <input
+          class="custom-inputs"
+          type="password"
+          name="userPassword"
+          placeholder="Password"
+          id=""
+        />
+        <input
+          class="custom-inputs"
+          type="password"
+          name="userCheckPassword"
+          placeholder="Check Password"
+          id=""
+        />
+        <br />
+        <label class="gender-label" for=""><u>Gender</u></label>
+        <br />
+        <input type="radio" name="gender" value="male" id="name" />
+        <label class="input-radio" for="name">Male</label>
+
+        <input type="radio" name="gender" value="female" id="female" />
+        <label class="input-radio" for="female">Female</label>
+        <br />
+        <br />
+        <label class="input-radio" for=""
+          ><u>Are you Student Or Graduated?</u></label
+        >
+        <br />
+        <input type="checkbox" name="student" id="student" />
+        <label class="input-radio" for="student">Student</label>
+
+        <input type="checkbox" name="graduated" id="graduated" />
+        <label class="input-radio" for="graduated">Graduated</label>
+        <br />
+        <br />
+        <label class="input-radio" for=""
+          ><u>What is your favorite type of car?</u></label
+        >
+        <br />
+        <label class="input-radio" for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option selected value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
